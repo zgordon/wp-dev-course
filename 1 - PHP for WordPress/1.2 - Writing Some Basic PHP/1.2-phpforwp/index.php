@@ -25,7 +25,6 @@
 
     	<p>My name is "<?php echo $name; ?>."</p>
 
-      <hr>
 
     	<h2>My Latest Post:</h2>
 
