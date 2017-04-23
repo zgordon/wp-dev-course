@@ -15,9 +15,9 @@
     <div id="content">
 
     	<?php
-
+      
         // Create a variable called $name and assign it your name
-    		$name = "Enter your name";
+        $name = "Enter your name";
 
     	?>
 
