@@ -106,9 +106,9 @@
      */
     function pre_export( $content ) {
 
-    echo "<pre>";
-    var_export( $content );
-    echo "</pre>";
+      echo "<pre>";
+      var_export( $content );
+      echo "</pre>";
 
     }
 
