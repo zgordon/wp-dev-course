@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/wp-content/themes/1.04-phpforwp-completed/style.css">
 </head>
 <body>
+
   <header id="masthead">
     <h1><a href="#">PHP for WordPress</a></h1>
   </header>
@@ -55,9 +56,9 @@
 
       // Create an array of post objects using the create_post function
       $posts = array(
-    create_post( 'Hello World', '<p>Content goes here.</p>' ),
-    create_post( 'PHP for WordPress', '<p>Lorem to the ipsum.</p>' ),
-    create_post( 'WP Development', '<p>Learn more about it.</p>')
+        create_post( 'Hello World', '<p>Content goes here.</p>' ),
+        create_post( 'PHP for WordPress', '<p>Lorem to the ipsum.</p>' ),
+        create_post( 'WP Development', '<p>Learn more about it.</p>')
       );
 
       // Use pre_export to display the $posts
