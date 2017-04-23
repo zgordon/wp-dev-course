@@ -14,19 +14,19 @@
 
     <div id="content">
 
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-  <h2><?php the_title(); ?></h2>
-  <?php the_content(); ?>
+      <h2><?php the_title(); ?></h2>
+      <?php the_content(); ?>
 
-  <?php endwhile; else: ?>
+    <?php endwhile; else: ?>
 
-  <h2><?php _e( '404 Error' ); ?></h2>
-  <p><?php _e( 'Sorry, content not found.', 'phpforwp' ); ?></p>
+      <h2><?php _e( '404 Error' ); ?></h2>
+      <p><?php _e( 'Sorry, content not found.', 'phpforwp' ); ?></p>
 
-  <?php endif; ?>
+    <?php endif; ?>
 
-  </div>
+    </div>
 
   </body>
 </html>
