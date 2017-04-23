@@ -1,36 +1,50 @@
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
-<link rel="stylesheet" href="/wp-content/themes/1.2-phpforwp/style.css">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PHP for WordPress</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="/wp-content/themes/1.2-phpforwp/style.css">
+  </head>
+  <body>
 
-<header id="masthead">
-	<h1><a href="#">PHP for WordPress</a></h1>
-</header>
+    <header id="masthead">
+    	<h1><a href="#">PHP for WordPress</a></h1>
+    </header>
 
-<div id="content">
+    <div id="content">
 
-	<?php
+    	<?php
 
-		$name = "Enter your name";
+        // A variable for saving your name
+    		$name = "Enter your name";
 
-	?>
+    	?>
 
-	<h2>Welcome!</h2>
+    	<h2>Welcome!</h2>
 
-	<p>My name is "<?php echo $name; ?>."</p>
+    	<p>My name is "<?php echo $name; ?>."</p>
 
+      <hr>
 
-	<h2>My Latest Post:</h2>
+    	<h2>My Latest Post:</h2>
 
-	<?php
+    	<?php
 
-		display_post( 'Hello PHP!', 'Lorem ipsum content' );
+        // Calling the custom function to display posts
+        // and passing it paramters
+    		display_post( 'Hello PHP!', 'Lorem ipsum content' );
 
-		function display_post( $title, $content ) {
+        // A custom function for displaying posts
+    		function display_post( $title, $content ) {
 
-			echo "<h3><a href=\"#\">$title</a></h3>";
-			echo "<div>$content</div>";
+    			echo "<h3><a href=\"#\">$title</a></h3>";
+    			echo "<div>$content</div>";
 
-		}
+    		}
 
-	?>
+    	?>
 
-</div>
+    </div>
+  </body>
+</html>
