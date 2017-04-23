@@ -86,10 +86,10 @@
        */
       function display_post( $post ) {
 
-      // Echo an <h3> tag with the $post->title inside
-      echo "<h3><a href=\"#\">$post->title</a></h3>";
-      // Echo a <div> tag with the $post->content inside
-      echo "<div>$post->content</div>";
+        // Echo an <h3> tag with the $post->title inside
+        echo "<h3><a href=\"#\">$post->title</a></h3>";
+        // Echo a <div> tag with the $post->content inside
+        echo "<div>$post->content</div>";
 
       }
 
