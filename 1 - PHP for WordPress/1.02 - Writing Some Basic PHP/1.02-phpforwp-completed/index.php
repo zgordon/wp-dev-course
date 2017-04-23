@@ -31,16 +31,16 @@
     	<?php
 
         // Call the custom display_post function
-				// Pass it the title and content of the post as parameters
+        // Pass it the title and content of the post as parameters
     		display_post( 'Hello PHP!', '<p>Lorem ipsum content</p>' );
 
         // Write a custom function called display_post
-				// Have it accept a $title and $content parameter
+        // Have it accept a $title and $content parameter
     		function display_post( $title, $content ) {
 
-					// Echo out the $title in an <h3> tag
+          // Echo out the $title in an <h3> tag
     			echo "<h3>$title</h3>";
-					// Echo out the $content in an <div> tag
+          // Echo out the $content in an <div> tag
     			echo "<div>$content</div>";
 
     		}

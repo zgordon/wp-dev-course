@@ -29,16 +29,16 @@
 
     	<?php
 
-				// Call the custom display_post function
-				// Pass it the title and content of the post as parameters
+        // Call the custom display_post function
+        // Pass it the title and content of the post as parameters
 
 
-				// Write a custom function called display_post
-				// Have it accept a $title and $content parameter
+        // Write a custom function called display_post
+        // Have it accept a $title and $content parameter
 
-					// Inside of the display_post function:
-					// Echo out the $title in an <h3> tag
-					// Echo out the $content in an <div> tag
+        // Inside of the display_post function:
+        // Echo out the $title in an <h3> tag
+        // Echo out the $content in an <div> tag
 
 
     	?>
