@@ -14,12 +14,12 @@
 
     <div id="content">
 
-    	<?php
-      
+      <?php
+
         // Create a variable called $name and assign it your name
         $name = "Enter your name";
 
-    	?>
+      ?>
 
     	<h2>Welcome!</h2>
 
