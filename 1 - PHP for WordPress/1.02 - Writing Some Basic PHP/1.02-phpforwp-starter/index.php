@@ -16,30 +16,30 @@
 
     	<?php
 
-        // A variable for saving your name
-    		$name = "Enter your name";
+        // Create a variable called $name and assign it your name
 
     	?>
 
     	<h2>Welcome!</h2>
 
-    	<p>My name is "<?php echo $name; ?>."</p>
+    	<p>My name is "<?php // echo $name variable here ?>."</p>
 
 
     	<h2>My Latest Post:</h2>
 
     	<?php
 
-        // Calling the custom display_post function
-    		display_post( 'Hello PHP!', 'Lorem ipsum content' );
+				// Call the custom display_post function
+				// Pass it the title and content of the post as parameters
 
-        // A custom function for displaying posts
-    		function display_post( $title, $content ) {
 
-    			echo "<h3><a href=\"#\">$title</a></h3>";
-    			echo "<div>$content</div>";
+				// Write a custom function called display_post
+				// Have it accept a $title and $content parameter
 
-    		}
+					// Inside of the display_post function:
+					// Echo out the $title in an <h3> tag
+					// Echo out the $content in an <div> tag
+
 
     	?>
 

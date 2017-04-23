@@ -14,15 +14,15 @@
 
     <div id="content">
 
-			<!-- Open the loop here -->
+			<?php // Start the loop here ?>
 
-				<!-- Display the_title and the_content -->
+				<!-- Display the_title and the_content here -->
 
-			<!-- End while and start else -->
+			<?php // End while and start else ?>
 
 				<!-- Display a 404 message here -->
 
-			<!-- End if -->
+			<?php // End if ?>
 
 		</div>
 

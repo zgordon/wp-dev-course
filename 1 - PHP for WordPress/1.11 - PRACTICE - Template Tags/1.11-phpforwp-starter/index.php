@@ -1,104 +1,37 @@
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
-<link rel="stylesheet" href="/wp-content/themes/1.4-phpforwp/style.css">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PHP for WordPress</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
+		<link rel="stylesheet" href="/wp-content/themes/1.11-phpforwp-starter/style.css">
+	</head>
 
+	<!-- Add any template tags outside of loop -->
 
-<header id="masthead">
-	<h1><a href="#">PHP for WordPress</a></h1>
-</header>
+  <body>
 
-<div id="content">
+    <header id="masthead">
+    	<h1><a href="#">PHP for WordPress</a></h1>
+    </header>
 
-	<h2>A Post Object</h2>
+    <div id="content">
 
-	<?php
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-		// Creating a post object and assigning properties
-		$post = new stdClass;
-		$post->title = "Hello PHP!";
-		$post->content = "Post content goes here";
+				<!-- Add any post template tags inside of loop -->
 
-		pre_export( $post );
+				<h2><?php the_title(); ?></h2>
+				<?php the_content(); ?>
 
-	?>
+			<?php endwhile; else: ?>
 
+				<h2><?php _e( '404 Error' ); ?></h2>
+				<p><?php _e( 'Sorry, content not found.', 'phpforwp' ); ?></p>
 
-	<!-- <h2>Array of Post Objects</h2>
+			<?php endif; ?>
 
-	<?php
+		</div>
 
-		/**
-		 * Custom function for creating post objects
-		 *
-		 * @param string $title Title for the post
-		 * @param string $content Content for the post with HTML
-		 * @return object Post object
-		 */
-		function create_post( $title, $content ) {
-
-			$post = new stdClass;
-			$post->title = $title;
-			$post->content = $content;
-
-			return $post;
-
-		}
-
-		// Creating an array of post objects using the create_post function
-		$posts = array(
-			create_post( 'Hello World', '<p>Content goes here.</p>' ),
-			create_post( 'PHP for WordPress', '<p>Lorem to the ipsum.</p>' ),
-			create_post( 'WP Development', '<p>Learn more about it.</p>')
-		);
-
-		pre_export( $posts );
-
-	?> -->
-
-	<!-- <h2>Displaying Post Objects</h2>
-
-
-	<?php
-
-		// Loop through array of posts and display each one on the page
-		foreach( $posts as $post ) {
-
-			display_post( $post );
-
-		}
-
-		/**
-		 * Custom function for displaying the title and content for a post
-		 *
-		 * @param object $post The post to be displayed
-		 */
-		function display_post( $post ) {
-
-			echo "<h3><a href=\"#\">$post->title</a></h3>";
-			echo "<div>$post->content</div>";
-
-		}
-
-	?> -->
-
-
-	<?php
-
-
-	/**
-	 * Helper function for var_exporting objects wrapped in <pre> tags
-	 *
-	 * @param object|array $content The content to be var_exported
-	 */
-	function pre_export( $content ) {
-
-			echo "<pre>";
-			var_export( $content );
-			echo "</pre>";
-
-	}
-
-	?>
-
-
-
-</div>
+	</body>
+</html>

@@ -1,5 +1,5 @@
 /*
-Theme Name: 1.9 - The Loop (Completed)
+Theme Name: 1.11 - Template Tags (Completed)
 Author: Zac Gordon
 Author URI: http://zacgordon.com
 Description: Demo site for Zac Gordon's WordPress Development Course.
@@ -49,4 +49,18 @@ pre {
 	padding: 20px;
 	width: 80%;
 	border-radius: 5px;
+}
+
+.byline {
+	color: #777;
+	font-size: .8rem;
+}
+
+.byline a {
+	color: #777;
+	text-decoration: underline;
+}
+
+.byline a:hover {
+	color: #564A71;
 }
