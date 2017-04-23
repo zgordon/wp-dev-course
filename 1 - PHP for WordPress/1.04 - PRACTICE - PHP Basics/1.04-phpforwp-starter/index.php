@@ -40,19 +40,19 @@
        */
       function create_post( $title, $content ) {
 
-      // Create a new object and save as $post
-      // Assign a $title and $content as property to $post
+        // Create a new object and save as $post
+        // Assign a $title and $content as property to $post
 
 
-      // Return the $post
+        // Return the $post
 
       }
 
       // Create an array of post objects using the create_post function
       $posts = array(
-      // Post 1
-      // Post 2
-      // Post 3
+        // Post 1
+        // Post 2
+        // Post 3
       );
 
       // Use pre_export to display the $posts
@@ -67,7 +67,7 @@
       // Loop through array of posts and display each one on the page
       foreach( $posts as $post ) {
 
-      // Call the display_post function and pass it the $post
+        // Call the display_post function and pass it the $post
 
       }
 
@@ -78,8 +78,8 @@
        */
       function display_post( $post ) {
 
-      // Echo an <h3> tag with the $post->title inside
-      // Echo a <div> tag with the $post->content inside
+        // Echo an <h3> tag with the $post->title inside
+        // Echo a <div> tag with the $post->content inside
 
       }
 
@@ -96,9 +96,9 @@
        */
       function pre_export( $content ) {
 
-      echo "<pre>";
-      var_export( $content );
-      echo "</pre>";
+        echo "<pre>";
+        var_export( $content );
+        echo "</pre>";
 
       }
 
