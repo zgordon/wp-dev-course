@@ -18,11 +18,11 @@
 
       <?php
 
-      // Create a new object and save as $post
-      // Assign a title and content property to $post
+	      // Create a new object and save as $post
+	      // Assign a title and content property to $post
 
 
-      // Use pre_export to display the $post
+	      // Use pre_export to display the $post
 
       ?>
 
