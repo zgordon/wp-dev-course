@@ -9,7 +9,7 @@
   <body>
 
     <header id="masthead">
-    	<h1><a href="#">PHP for WordPress</a></h1>
+      <h1><a href="#">PHP for WordPress</a></h1>
     </header>
 
     <div id="content">
