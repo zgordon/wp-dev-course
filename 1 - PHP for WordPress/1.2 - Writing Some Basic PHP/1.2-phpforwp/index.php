@@ -30,8 +30,7 @@
 
     	<?php
 
-        // Calling the custom function to display posts
-        // and passing it paramters
+        // Calling the custom display_post function
     		display_post( 'Hello PHP!', 'Lorem ipsum content' );
 
         // A custom function for displaying posts
