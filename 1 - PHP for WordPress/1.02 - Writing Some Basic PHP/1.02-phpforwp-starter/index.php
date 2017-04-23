@@ -8,40 +8,40 @@
   </head>
   <body>
 
-		<header id="masthead">
-			<h1><a href="#">PHP for WordPress</a></h1>
-		</header>
+    <header id="masthead">
+      <h1><a href="#">PHP for WordPress</a></h1>
+    </header>
 
-		<div id="content">
+    <div id="content">
 
-			<?php
+    <?php
 
-				// Create a variable called $name and assign it your name
+      // Create a variable called $name and assign it your name
 
-			?>
+    ?>
 
-			<h2>Welcome!</h2>
+    <h2>Welcome!</h2>
 
-			<p>My name is "<?php // echo $name variable here ?>."</p>
-
-
-			<h2>My Latest Post:</h2>
-
-			<?php
-
-				// Call the custom display_post function
-				// Pass it the title and content of the post as parameters
+    <p>My name is "<?php // echo $name variable here ?>."</p>
 
 
-				// Write a custom function called display_post
-				// Have it accept a $title and $content parameter
+    <h2>My Latest Post:</h2>
 
-					// Inside of the display_post function:
-					// Echo out the $title in an <h3> tag
-					// Echo out the $content in an <div> tag
+    <?php
 
-			?>
+      // Call the custom display_post function
+      // Pass it the title and content of the post as parameters
 
-		</div>
-  </body>
+
+      // Write a custom function called display_post
+      // Have it accept a $title and $content parameter
+
+        // Inside of the display_post function:
+        // Echo out the $title in an <h3> tag
+        // Echo out the $content in an <div> tag
+
+    ?>
+
+  </div>
+</body>
 </html>
