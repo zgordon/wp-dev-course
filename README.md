@@ -1,5 +1,4 @@
-# WordPress Development
-## Course Example Files
+# WordPress Development Course Files
 
 These are the files to accompany my [WordPress Development Course on Udemy](#).
 
