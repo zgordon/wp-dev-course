@@ -82,7 +82,7 @@
     <!-- 404 Page -->
     <?php if( is_404() ): ?>
 
-      <h1><?php _e( '404 - Content not found', 'phpforwp' ); ?></h1>
+      <h1><?php esc_html_e( '404 - Content not found', 'phpforwp' ); ?></h1>
 
     <?php endif; ?>
 

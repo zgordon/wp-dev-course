@@ -24,8 +24,8 @@
 
     <?php endwhile; else: ?>
 
-      <h2><?php _e( '404 Error' ); ?></h2>
-      <p><?php _e( 'Sorry, content not found.', 'phpforwp' ); ?></p>
+      <h2><?php esc_html_e( '404 Error' ); ?></h2>
+      <p><?php esc_html_e( 'Sorry, content not found.', 'phpforwp' ); ?></p>
 
     <?php endif; ?>
 

@@ -1,0 +1,25 @@
+/*
+ Theme Name:   Twenty Sixteen Child
+ Description:  Twenty Sixteen Child Theme
+ Author:       Zac Gordon
+ Author URI:   http://zacgordon.com
+ Template:     twentysixteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  twentysixteenchild
+*/
+
+
+body {
+  background: #FEEF97;
+}
+
+#page {
+  background: #fff
+}
+
+.custom-footer {
+  clear: both;
+  width: 100%;
+}

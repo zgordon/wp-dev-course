@@ -24,7 +24,7 @@
         <footer>
           <p class="byline">
             Author:
-            <a href="<?php the_author(); ?>"><?php the_author(); ?></a> |
+            <a href="<?php echo get_author_posts_url( $post->post_author ); ?>"><?php the_author(); ?></a> |
             Date: <?php the_time( 'M. j, Y' ); ?> |
             Categories: <?php the_category( ',' ); ?> |
             Tags: <?php the_tags( '', ',', '' ); ?>
@@ -35,8 +35,8 @@
 
     <?php endwhile; else: ?>
 
-      <h2><?php _e( '404 Error' ); ?></h2>
-      <p><?php _e( 'Sorry, content not found.', 'phpforwp' ); ?></p>
+      <h2><?php esc_html_e( '404 Error' ); ?></h2>
+      <p><?php esc_html_e( 'Sorry, content not found.', 'phpforwp' ); ?></p>
 
     <?php endif; ?>
 
