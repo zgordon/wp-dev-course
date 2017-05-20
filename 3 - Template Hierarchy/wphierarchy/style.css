@@ -1,0 +1,311 @@
+/*
+Theme Name: 3.X - Template Hierarchy Demo (Completed)
+Author: Zac Gordon
+Author URI: http://zacgordon.com
+Description: Demo theme for Zac Gordon's WordPress Development Course.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wphierarchy
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+body {
+  background-color: #fff091;
+  font-family: "Open Sans", sans-serif;
+}
+
+body.tag-50,
+body.category-9 {
+  background-color: #a7ff91;
+}
+
+h1, h2, h3, h4, h5, h6,
+.site-title {
+  font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  margin:  2rem 0 1rem;
+}
+
+h2.search-title {
+  text-transform: capitalize;
+}
+
+a {
+  color: #494329;
+  text-decoration: none;
+}
+
+pre {
+  background: #222;
+  padding: 10px;
+  border: 1px #777 solid;
+  color: #ededed;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 20px;
+  list-style-position: outside;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+#masthead,
+footer.site-footer {
+  margin: 2rem auto 1rem;
+  text-align: center;
+  width: 80%;
+}
+
+.main-navigation li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.main-navigation li a {
+  padding: 5px;
+}
+
+.main-navigation li:hover>a {
+  color: #000;
+}
+
+.main-navigation li.current-menu-item>a,
+.main-navigation li.current-page-parent>a {
+  font-weight: bold;
+  color: #494329;
+}
+
+.main-navigation li ul {
+  display: none
+}
+
+.main-navigation li:hover ul {
+  display: block;
+  position: absolute;
+  margin-left: -10px;
+  z-index: 100;
+  background: #fff091;
+  padding: 5px 10px;
+}
+
+.main-navigation li:hover ul li {
+  display: block;
+  margin: .5rem 0;
+}
+
+#content {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 1020px;
+  border-radius: 5px;
+  position: relative;
+  overflow: auto;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.page-template-template-splash #content,
+.page-id-1096 #content,
+.category-excerpt #content,
+.tag-wordpress #content {
+  width: 50%;
+  max-width: 720px;
+}
+
+#content article,
+#content article div,
+#content img {
+  max-width: 100%;
+}
+
+#primary {
+  width: 70%;
+  float: left;
+}
+
+
+#primary.extended,
+#primary.excerpt,
+#primary.wordpress {
+  width: 100%;
+  float: none;
+}
+
+article.post {
+  margin-bottom: 4rem;
+}
+
+.author article.post {
+  margin-bottom: 2rem;
+}
+
+#secondary {
+  width: 25%;
+  float: right;
+}
+
+#secondary h2 {
+  font-size: 1.2rem;
+}
+
+.byline {
+  color: #777;
+  font-size: .8rem;
+}
+
+.byline a {
+  color: #777;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.byline a:hover {
+  color: #564A71;
+}
+
+.author-bio {
+  border-bottom: 1px #ccc solid;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.author-bio img {
+  float: left;
+}
+
+
+/*--------------------------------------------------------------
+# Default WP Classes
+--------------------------------------------------------------*/
+
+
+.alignleft, img.alignleft {
+	margin-right: 1.5em;
+	display: inline;
+	float: left;
+}
+.alignright, img.alignright {
+	margin-left: 1.5em;
+	display: inline;
+	float: right;
+}
+.aligncenter, img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+}
+.wp-caption {
+	margin-bottom: 1.5em;
+	text-align: center;
+	padding-top: 5px;
+}
+.wp-caption img {
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+}
+.wp-caption p.wp-caption-text {
+	line-height: 1.5;
+	font-size: 10px;
+	margin: 0;
+}
+.wp-smiley {
+	margin: 0 !important;
+	max-height: 1em;
+}
+blockquote.left {
+	margin-right: 20px;
+	text-align: right;
+	margin-left: 0;
+	width: 33%;
+	float: left;
+}
+blockquote.right {
+	margin-left: 20px;
+	text-align: left;
+	margin-right: 0;
+	width: 33%;
+	float: right;
+}
+.gallery dl {}
+.gallery dt {}
+.gallery dd {}
+.gallery dl a {}
+.gallery dl img {}
+.gallery-caption {}
+
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media only screen and ( max-width: 720px ) {
+  #content {
+    width: 90% !important;
+  }
+}

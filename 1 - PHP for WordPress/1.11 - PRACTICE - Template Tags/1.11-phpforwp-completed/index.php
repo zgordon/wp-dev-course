@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>PHP for WordPress</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
-  <link rel="stylesheet" href="/wp-content/themes/1.11-phpforwp-completed/style.css">
-</head>
-<body class="<?php body_class(); ?>">
-
-  <header id="masthead">
-    <h1><a href="#">PHP for WordPress</a></h1>
-  </header>
+<?php get_header(); ?>
 
   <div id="content">
 
@@ -39,12 +27,11 @@
 
     <?php endwhile; else: ?>
 
-      <h2><?php esc_html_e( '404 Error' ); ?></h2>
+      <h2><?php esc_html_e( '404 Error', 'phpforwp' ); ?></h2>
       <p><?php esc_html_e( 'Sorry, content not found.', 'phpforwp' ); ?></p>
 
     <?php endif; ?>
 
   </div>
 
-</body>
-</html>
+<?php get_footer(); ?>

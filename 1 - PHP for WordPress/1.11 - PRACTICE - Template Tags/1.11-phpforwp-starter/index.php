@@ -6,7 +6,6 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
   <link rel="stylesheet" href="/wp-content/themes/1.11-phpforwp-starter/style.css">
 </head>
-<!-- Add any template tags outside of loop -->
 <body>
 
   <header id="masthead">
@@ -14,6 +13,8 @@
   </header>
 
   <div id="content">
+
+<!-- Add any template tags outside of loop -->
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -24,10 +25,12 @@
 
     <?php endwhile; else: ?>
 
-      <h2><?php esc_html_e( '404 Error' ); ?></h2>
+      <h2><?php esc_html_e( '404 Error', 'phpforwp' ); ?></h2>
       <p><?php esc_html_e( 'Sorry, content not found.', 'phpforwp' ); ?></p>
 
     <?php endif; ?>
+
+<!-- Add any template tags outside of loop -->
 
   </div>
 
