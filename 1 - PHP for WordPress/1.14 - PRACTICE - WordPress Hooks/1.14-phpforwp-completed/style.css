@@ -1,0 +1,66 @@
+/*
+Theme Name: 1.14 - WordPress Hooks (Completed)
+Author: Zac Gordon
+Author URI: http://zacgordon.com
+Description: Demo site for Zac Gordon's WordPress Development Course.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: phpforwp
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+  background-color: #B49AEB;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Varela Round", sans-serif;
+}
+
+h2 {
+  margin:  2rem 0 1rem;
+}
+
+a {
+  color: #564A71;
+  text-decoration: none;
+}
+
+pre {
+  background: #222;
+  padding: 10px;
+  border: 1px #777 solid;
+  color: #ededed;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+#masthead {
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+
+#content {
+  background: #efefef;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.byline {
+  color: #777;
+  font-size: .8rem;
+}
+
+.byline a {
+  color: #777;
+  text-decoration: underline;
+}
+
+.byline a:hover {
+  color: #564A71;
+}
