@@ -5,7 +5,7 @@
 
       <h1>
         <?php
-          echo esc_html__( 'Category: ', 'wphierarchy' );
+          echo esc_html_e( 'Category: ', 'wphierarchy' );
           echo single_cat_title();
           $paged = ( get_query_var('paged') ) ? get_query_var( 'paged' ) : 1;
           if ( $paged > 1 ) {

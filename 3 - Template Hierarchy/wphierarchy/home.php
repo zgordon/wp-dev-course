@@ -10,7 +10,6 @@
           if ( $paged > 1 ) {
             echo ' - Page ' . $paged;
           }
-
         ?>
       </h1>
 

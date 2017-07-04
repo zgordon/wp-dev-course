@@ -9,8 +9,6 @@
         </a>
       </h2>
 
-
-
   </header>
 
   <div class="entry-content">

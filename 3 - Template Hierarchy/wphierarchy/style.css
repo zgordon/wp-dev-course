@@ -7,6 +7,7 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wphierarchy
+Domain Path: /languages
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -52,6 +53,10 @@ pre {
   color: #ededed;
   font-family: monospace;
   font-size: 1rem;
+}
+
+video {
+  max-width: 100%;
 }
 
 ul {
@@ -123,6 +128,7 @@ footer.site-footer {
   word-wrap: break-word;
 }
 
+.single-portfolio #content,
 .page-template-template-splash #content,
 .page-id-1096 #content,
 .category-excerpt #content,
@@ -135,6 +141,10 @@ footer.site-footer {
 #content article div,
 #content img {
   max-width: 100%;
+}
+
+#content img {
+  height: auto;
 }
 
 #primary {
@@ -157,6 +167,39 @@ article.post {
 .author article.post {
   margin-bottom: 2rem;
 }
+
+.prev-posts,
+.next-posts,
+.archive article.portfolio {
+  width: 45%;
+  float: left;
+}
+
+.next-posts {
+  text-align: right;
+  float: right;
+}
+
+.archive article.portfolio:nth-child(even) {
+  margin-right: 5%;
+}
+
+.form-submit input#submit,
+.button {
+  border: 1px #ccc solid;
+  border-radius: 3px;
+  background: #fff;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  display: inline-block;
+}
+
+.form-submit input#submit:hover,
+.button:hover {
+  cursor: pointer;
+  border-color: #777;
+}
+
 
 #secondary {
   width: 25%;
@@ -259,6 +302,224 @@ blockquote.right {
 .size-medium {}
 .size-thumbnail {}
 
+
+  /**
+   * 11.4 - Comments
+   */
+
+  .comments-area {
+  	margin: 3rem 0 3.5em;
+  }
+
+  .comment-list + .comment-respond,
+  .comment-navigation + .comment-respond {
+  	padding-top: 1.75em;
+  }
+
+  .comments-title,
+  .comment-reply-title {
+  	border-top: 1px solid #ccc;
+  	font-size: 23px;
+  	font-size: 1.4375rem;
+  	font-weight: 700;
+  	line-height: 1.3125;
+  	padding-top: 1.217391304em;
+  }
+
+  .comments-title {
+  	margin-bottom: 1.217391304em;
+  }
+
+  .comment-list {
+  	list-style: none;
+  	margin: 0;
+  }
+
+  .comment-list article,
+  .comment-list .pingback,
+  .comment-list .trackback {
+  	border-top: 1px solid #d1d1d1;
+  	padding: 1.75em 0;
+  }
+
+  .comment-list .children {
+  	list-style: none;
+  	margin: 0;
+  }
+
+  .comment-list .children > li {
+  	padding-left: 0.875em;
+  }
+
+  .comment-author {
+  	color: #1a1a1a;
+  	margin-bottom: 0.4375em;
+  }
+
+  .comment-author .avatar {
+  	float: left;
+  	height: 28px;
+  	margin-right: 0.875em;
+  	position: relative;
+  	width: 28px;
+  }
+
+  .comment-form textarea {
+    width: 90%;
+    font-size: 1rem;
+    padding: .5rem;
+  }
+
+  .comment-form input {
+    padding: .5rem 1rem;
+    width: 100%;
+  }
+
+
+  /*--------------------------------------------------------------
+  # Twenty Sixteen Comments CSS
+  --------------------------------------------------------------*/
+
+  .comment-metadata,
+  .pingback .edit-link {
+  	font-size: 13px;
+  	font-size: 0.8125rem;
+  	line-height: 1.6153846154;
+  }
+
+  .comment-metadata {
+  	margin-bottom: 2.1538461538em;
+  }
+
+  .comment-metadata a,
+  .pingback .comment-edit-link {
+
+  }
+
+  .comment-metadata a:hover,
+  .comment-metadata a:focus,
+  .pingback .comment-edit-link:hover,
+  .pingback .comment-edit-link:focus {
+
+  }
+
+  .comment-metadata .edit-link,
+  .pingback .edit-link {
+  	display: inline-block;
+  }
+
+  .comment-metadata .edit-link:before,
+  .pingback .edit-link:before {
+  	content: "\002f";
+  	display: inline-block;
+  	opacity: 0.7;
+  	padding: 0 0.538461538em;
+  }
+
+  .comment-content ul,
+  .comment-content ol {
+  	margin: 0 0 1.5em 1.25em;
+  }
+
+  .comment-content li > ul,
+  .comment-content li > ol {
+  	margin-bottom: 0;
+  }
+
+  .comment-reply-link {
+  	border: 1px solid #d1d1d1;
+  	border-radius: 2px;
+  	color: #007acc;
+  	display: inline-block;
+  	font-size: 13px;
+  	font-size: 0.8125rem;
+  	line-height: 1;
+  	margin-top: 2.1538461538em;
+  	padding: 0.5384615385em 0.5384615385em 0.4615384615em;
+  }
+
+  .comment-reply-link:hover,
+  .comment-reply-link:focus {
+  	outline: 0;
+  }
+
+  .comment-form {
+  }
+
+  .comment-form label {
+  	display: block;
+  	font-size: 13px;
+  	font-size: 0.8125rem;
+  	letter-spacing: 0.076923077em;
+  	line-height: 1.6153846154;
+  	margin-bottom: 0.5384615385em;
+  	text-transform: uppercase;
+  }
+
+  .comment-list .comment-form {
+  	padding-bottom: 1.75em;
+  }
+
+  .comment-notes,
+  .comment-awaiting-moderation,
+  .logged-in-as,
+  .form-allowed-tags {
+  	color: #686868;
+  	font-size: 13px;
+  	font-size: 0.8125rem;
+  	line-height: 1.6153846154;
+  	margin-bottom: 2.1538461538em;
+  }
+
+  .no-comments {
+  	border-top: 1px solid #d1d1d1;
+  	font-family: Montserrat, "Helvetica Neue", sans-serif;
+  	font-weight: 700;
+  	margin: 0;
+  	padding-top: 1.75em;
+  }
+
+  .comment-navigation + .no-comments {
+  	border-top: 0;
+  	padding-top: 0;
+  }
+
+  .form-allowed-tags code {
+  	font-family: Inconsolata, monospace;
+  }
+
+  .form-submit {
+  	margin-bottom: 0;
+  }
+
+  .required {
+  	color: #007acc;
+  	font-family: Merriweather, Georgia, serif;
+  }
+
+  .comment-reply-title small {
+  	font-size: 100%;
+  }
+
+  .comment-reply-title small a {
+  	border: 0;
+  	float: right;
+  	height: 32px;
+  	overflow: hidden;
+  	width: 26px;
+  }
+
+  .comment-reply-title small a:hover,
+  .comment-reply-title small a:focus {
+  	color: #1a1a1a;
+  }
+
+  .comment-reply-title small a:before {
+  	content: "\f405";
+  	font-size: 32px;
+  	position: relative;
+  	top: -5px;
+  }
 
 /*--------------------------------------------------------------
 # Accessibility
