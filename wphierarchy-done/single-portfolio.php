@@ -15,7 +15,7 @@
             <?php the_post_thumbnail( 'full' ) ?>
             <?php the_content(); ?>
             <p>
-              <a class="button" target="_blank" href="<?php the_field( 'url' ); ?>">Visit the Site</a>
+              <a class="button" href="<?php the_field( 'url' ); ?>">Visit the Site</a>
             </p>
           </div>
 
