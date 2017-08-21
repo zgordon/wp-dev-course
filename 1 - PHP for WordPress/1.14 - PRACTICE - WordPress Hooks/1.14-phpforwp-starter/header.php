@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>PHP for WordPress</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
-  <link rel="stylesheet" href="/wp-content/themes/1.14-phpforwp-starter/style.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
   <?php wp_head(); ?>
 </head>
 <body class="<?php body_class(); ?>">
