@@ -6,13 +6,19 @@
 
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <article id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
+        <article <?php post_class(); ?>>
 
-          <header class="entry-header">
+          <?php if( !is_attachment() ): ?>
 
-            <?php the_title(); ?>
+            <header class="entry-header">
 
-          </header>
+              <h1><?php the_title(); ?></h1>
+
+              <?php get_template_part( 'template-parts/byline' ); ?>
+
+            </header>
+
+          <?php endif; ?>
 
           <div class="entry-content">
 
@@ -24,8 +30,8 @@
 
       <?php endwhile; endif; ?>
 
-      <?php comments_template(); ?>
-
+      <p class="prev-posts"><?php previous_post_link(); ?></p>
+      <p class="next-posts"><?php next_post_link(); ?></p>
 
     </main>
 

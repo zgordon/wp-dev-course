@@ -43,7 +43,7 @@ function wptags_title_markup( $title, $id = null ) {
 
     return $title;
 }
-add_filter( 'the_title', 'wptags_title_markup', 10, 2 );
+// add_filter( 'the_title', 'wptags_title_markup', 10, 2 );
 
 // Register Menu Locations
 register_nav_menus( [
