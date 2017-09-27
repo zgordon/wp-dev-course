@@ -15,7 +15,7 @@
               <?php
 
                 // Default Thumbnail
-                the_post_thumbnail();
+                // the_post_thumbnail();
 
                 // Post Sizes - https://goo.gl/daXzTh
 
@@ -36,12 +36,12 @@
 
 
                 // Post Thumbs with Attributes
-                // $attr = [
-                //   'class' => 'img featured',
-                //   'title' => get_the_title(),
-                //   'alt' => get_the_title() . ' Alt'
-                // ];
-                // the_post_thumbnail( 'full', $attr );
+                $attr = [
+                  'class' => 'img featured',
+                  'title' => get_the_title(),
+                  'alt' => get_the_title() . ' Alt'
+                ];
+                the_post_thumbnail( 'thumbnail', $attr );
 
 
               ?>

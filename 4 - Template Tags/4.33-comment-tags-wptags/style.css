@@ -326,6 +326,13 @@ blockquote.right {
    * 11.4 - Comments
    */
 
+   #comments ul,
+   #comments ol,
+   #comments li {
+       list-style: none;
+       margin: 0;
+   }
+
   .comments-area {
   	margin: 3rem 0 3.5em;
   }

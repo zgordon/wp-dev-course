@@ -34,6 +34,14 @@ if ( post_password_required() ) {
 
   <?php endif; ?>
 
-  <?php comment_form(); ?>
+  <?php if( comments_open() ): ?>
+
+    <?php comment_form(); ?>
+
+  <?php else: ?>
+
+     <p><?php esc_html_e( 'Comments closed.', 'wptags' ); ?></p>
+
+   <?php endif; ?>
 
 </div>

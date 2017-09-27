@@ -9,7 +9,7 @@
       sprintf(
         'Posted on %s @ %s',
         get_comment_date( 'm.d.y' ),
-        get_comment_time( )
+        get_comment_time()
       ),
       'wptags'
     );

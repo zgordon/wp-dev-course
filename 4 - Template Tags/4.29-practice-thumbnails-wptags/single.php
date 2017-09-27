@@ -16,7 +16,7 @@
 
                     $attr = [
                       'class' => 'featured',
-                      'title' => get_the_title()                    
+                      'title' => get_the_title()
                     ];
                     the_post_thumbnail( 'full', $attr );
 

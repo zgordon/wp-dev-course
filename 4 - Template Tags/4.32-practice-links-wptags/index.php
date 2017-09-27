@@ -10,10 +10,6 @@
 
           <header class="entry-header">
 
-            <?php echo get_search_link( 'hello' ); ?>
-            
-            <?php echo 'Query: ' . get_search_query(); ?>
-
             <?php if( has_post_thumbnail() ): ?>
 
               <a href="<?php the_permalink(); ?>">
@@ -21,7 +17,7 @@
 
                   $attr = [
                     'class' => 'alignleft',
-                    'title' => get_the_title()                    
+                    'title' => get_the_title()
                   ];
                   the_post_thumbnail( 'thumbnail', $attr );
 

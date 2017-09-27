@@ -17,7 +17,7 @@
 
                   $attr = [
                     'class' => 'alignleft',
-                    'title' => get_the_title()                    
+                    'title' => get_the_title()
                   ];
                   the_post_thumbnail( 'thumbnail', $attr );
 

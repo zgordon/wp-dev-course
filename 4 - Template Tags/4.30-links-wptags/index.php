@@ -4,15 +4,15 @@
 
     <main id="main" class="site-main" role="main">
 
+      <p><?php echo get_search_link( 'Hello WP' ); ?></p>
+      <p><?php echo 'Query: "' . get_search_query() . '"'; ?></p>
+
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
           <header class="entry-header">
 
-            <?php echo get_search_link( 'hello' ); ?>
-            
-            <?php echo 'Query: ' . get_search_query(); ?>
 
             <?php if( has_post_thumbnail() ): ?>
 
@@ -21,7 +21,7 @@
 
                   $attr = [
                     'class' => 'alignleft',
-                    'title' => get_the_title()                    
+                    'title' => get_the_title()
                   ];
                   the_post_thumbnail( 'thumbnail', $attr );
 

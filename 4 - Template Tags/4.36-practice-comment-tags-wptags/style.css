@@ -1,5 +1,5 @@
 /*
-Theme Name: 4.36 - PRACTICE - Comment Tags Practice (Complete)
+Theme Name: 4.36 - PRACTICE - Comment Tags Practice (Completed)
 Author: Zac Gordon
 Author URI: http://zacgordon.com
 Description: Demo theme for Zac Gordon's WordPress Development Course.
@@ -521,6 +521,7 @@ blockquote.right {
   .comment {
       border-bottom: 1px #ccc dashed;
       padding: 20px 10px;
+      overflow: auto;      
   }
 
   .comment .avatar {

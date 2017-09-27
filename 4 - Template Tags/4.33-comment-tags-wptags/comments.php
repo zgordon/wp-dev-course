@@ -23,13 +23,19 @@ if ( post_password_required() ) {
 
     <?php endif; ?>
 
-    <?php
-      $args = [
-        'callback' => 'wptags_comment'
-      ];
-      wp_list_comments( $args );
-      paginate_comments_links();
-    ?>
+    <ul>
+      <?php
+
+        // Show default comment list
+        // wp_list_comments();
+
+        // Custom comment list
+        $args = [
+          'callback' => 'wptags_comment',
+        ];
+        wp_list_comments( $args );
+      ?>
+    </ul>
 
 
   <?php endif; ?>
