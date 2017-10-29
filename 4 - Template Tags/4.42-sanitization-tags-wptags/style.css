@@ -1,0 +1,600 @@
+/*
+Theme Name: 4.42 - Sanitization Tags (DEMO)
+Author: Zac Gordon
+Author URI: http://zacgordon.com
+Description: Demo theme for Zac Gordon's WordPress Development Course.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wptags
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+body {
+  background-color: #feca5c;
+  font-family: "Open Sans", sans-serif;
+}
+
+body.tag-50,
+body.category-9 {
+  background-color: #a7ff91;
+}
+
+h1, h2, h3, h4, h5, h6,
+.site-title {
+  font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  margin:  2rem 0 1rem;
+}
+
+h2.search-title {
+  text-transform: capitalize;
+}
+
+a {
+  color: #494329;
+}
+
+.site-header a {
+  text-decoration: none;
+}
+
+pre {
+  background: #222;
+  padding: 10px;
+  border: 1px #777 solid;
+  color: #ededed;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+video {
+  max-width: 100%;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 20px;
+  list-style-position: outside;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+#masthead,
+footer.site-footer {
+  margin: 2rem auto 1rem;
+  text-align: center;
+  width: 80%;
+}
+
+#footer-menu li,
+.main-navigation li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#footer-menu li a,
+.main-navigation li a {
+  padding: 5px;
+}
+
+#footer-menu li:hover>a,
+.main-navigation li:hover>a {
+  color: #000;
+}
+
+#footer-menu li.current-menu-item>a,
+#footer-menu li.current-page-parent>a,
+.main-navigation li.current-menu-item>a,
+.main-navigation li.current-page-parent>a {
+  font-weight: bold;
+  color: #494329;
+}
+
+.main-navigation li ul {
+  display: none
+}
+
+.main-navigation li:hover ul {
+  display: block;
+  position: absolute;
+  margin-left: -10px;
+  z-index: 100;
+  background: #feca5c;
+  padding: 5px 10px;
+}
+
+.main-navigation li:hover ul li {
+  display: block;
+  margin: .5rem 0;
+}
+
+#content {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 1020px;
+  border-radius: 5px;
+  position: relative;
+  overflow: auto;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.single-portfolio #content,
+.page-template-template-splash #content,
+.page-id-1096 #content,
+.category-excerpt #content,
+.tag-wordpress #content {
+  width: 50%;
+  max-width: 720px;
+}
+
+#content article,
+#content article div,
+#content img {
+  max-width: 100%;
+}
+
+#content img {
+  height: auto;
+}
+
+#primary {
+  width: 70%;
+  float: left;
+}
+
+
+#primary.extended,
+#primary.excerpt,
+#primary.wordpress {
+  width: 100%;
+  float: none;
+}
+
+article.post {
+  margin-bottom: 4rem;
+}
+
+.author article.post {
+  margin-bottom: 2rem;
+}
+
+.prev-posts,
+.next-posts,
+.archive article.portfolio {
+  width: 45%;
+  float: left;
+}
+
+.next-posts {
+  text-align: right;
+  float: right;
+}
+
+.archive article.portfolio:nth-child(even) {
+  margin-right: 5%;
+}
+
+.form-submit input#submit,
+.button {
+  border: 1px #ccc solid;
+  border-radius: 3px;
+  background: #fff;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  display: inline-block;
+}
+
+.form-submit input#submit:hover,
+.button:hover {
+  cursor: pointer;
+  border-color: #777;
+}
+
+.login-username input,
+.login-username label,
+.login-password input,
+.login-password label {
+  width: 100%;
+}
+.login-submit #wp-submit {
+  display: block;
+  margin: 0;
+  width: 100%;
+  padding: .5rem;
+}
+
+#secondary {
+  width: 25%;
+  float: right;
+}
+
+#secondary h2 {
+  font-size: 1.2rem;
+}
+
+.byline {
+  color: #777;
+  font-size: .8rem;
+}
+
+.byline a {
+  color: #777;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.byline a:hover {
+  color: #564A71;
+}
+
+.author-bio {
+  border-bottom: 1px #ccc solid;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  overflow: auto;
+}
+
+.single .author-bio {
+  border-top: 1px #ccc solid;
+  margin-top: 2rem;
+}
+
+.author-bio img {
+  float: left;
+}
+
+
+/*--------------------------------------------------------------
+# Default WP Classes
+--------------------------------------------------------------*/
+
+
+.alignleft, img.alignleft {
+	margin-right: 1.5em;
+	display: inline;
+	float: left;
+}
+.alignright, img.alignright {
+	margin-left: 1.5em;
+	display: inline;
+	float: right;
+}
+.aligncenter, img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+}
+.wp-caption {
+	margin-bottom: 1.5em;
+	text-align: center;
+	padding-top: 5px;
+}
+.wp-caption img {
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+}
+.wp-caption p.wp-caption-text {
+	line-height: 1.5;
+	font-size: 10px;
+	margin: 0;
+}
+.wp-smiley {
+	margin: 0 !important;
+	max-height: 1em;
+}
+blockquote.left {
+	margin-right: 20px;
+	text-align: right;
+	margin-left: 0;
+	width: 33%;
+	float: left;
+}
+blockquote.right {
+	margin-left: 20px;
+	text-align: left;
+	margin-right: 0;
+	width: 33%;
+	float: right;
+}
+.gallery dl {}
+.gallery dt {}
+.gallery dd {}
+.gallery dl a {}
+.gallery dl img {}
+.gallery-caption {}
+
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}
+
+
+  /**
+   * 11.4 - Comments
+   */
+
+  .comments-area {
+  	margin: 3rem 0 3.5em;
+  }
+
+  .comment-list + .comment-respond,
+  .comment-navigation + .comment-respond {
+  	padding-top: 1.75em;
+  }
+
+  .comments-title,
+  .comment-reply-title {
+  	font-size: 23px;
+  	font-size: 1.4375rem;
+  	font-weight: 700;
+  	line-height: 1.3125;
+  	padding-top: 1.217391304em;
+  }
+
+  .comments-title {
+  	margin-bottom: 1.217391304em;
+  }
+
+  .comment-list {
+  	list-style: none;
+  	margin: 0;
+  }
+
+  .comment-list article,
+  .comment-list .pingback,
+  .comment-list .trackback {
+  	border-top: 1px solid #d1d1d1;
+  	padding: 1.75em 0;
+  }
+
+  .comment-list .children {
+  	list-style: none;
+  	margin: 0;
+  }
+
+  .comment-list .children > li {
+  	padding-left: 0.875em;
+  }
+
+  .comment-author {
+  	color: #1a1a1a;
+  	margin-bottom: 0.4375em;
+  }
+
+  .comment-author .avatar {
+  	float: left;
+  	height: 28px;
+  	margin-right: 0.875em;
+  	position: relative;
+  	width: 28px;
+  }
+
+  .comment-form textarea {
+    width: 90%;
+    width: calc( 100% - 1rem );
+    font-size: 1rem;
+    padding: .5rem;
+  }
+
+  .comment-form input {
+    padding: .5rem 1rem;
+    width: auto;
+  }
+
+
+  /*--------------------------------------------------------------
+  # Twenty Sixteen Comments CSS
+  --------------------------------------------------------------*/
+
+  .comment-metadata,
+  .pingback .edit-link {
+  	font-size: 13px;
+  	font-size: 0.8125rem;
+  	line-height: 1.6153846154;
+  }
+
+  .comment-metadata {
+  	margin-bottom: 2.1538461538em;
+  }
+
+  .comment-metadata a,
+  .pingback .comment-edit-link {
+
+  }
+
+  .comment-metadata a:hover,
+  .comment-metadata a:focus,
+  .pingback .comment-edit-link:hover,
+  .pingback .comment-edit-link:focus {
+
+  }
+
+  .comment-metadata .edit-link,
+  .pingback .edit-link {
+  	display: inline-block;
+  }
+
+  .comment-metadata .edit-link:before,
+  .pingback .edit-link:before {
+  	content: "\002f";
+  	display: inline-block;
+  	opacity: 0.7;
+  	padding: 0 0.538461538em;
+  }
+
+  .comment-content ul,
+  .comment-content ol {
+  	margin: 0 0 1.5em 1.25em;
+  }
+
+  .comment-content li > ul,
+  .comment-content li > ol {
+  	margin-bottom: 0;
+  }
+
+  .comment-reply-link,
+  #cancel-comment-reply-link {
+  	border: 1px solid #d1d1d1;
+    font-weight: normal;
+    text-decoration: none;
+  	border-radius: 2px;
+  	color: #007acc;
+  	display: inline-block;
+  	font-size: 0.8125rem;
+  	line-height: 1;
+  	margin-top: 1em;
+  	padding: 0.5384615385em 0.5384615385em 0.4615384615em;
+  }
+
+  .comment-reply-link:hover,
+  .comment-reply-link:focus {
+  	outline: 0;
+  }
+
+  .comment-form {
+  }
+
+  .comment-form label {
+  	display: block;
+  	font-size: 13px;
+  	font-size: 0.8125rem;
+  	letter-spacing: 0.076923077em;
+  	line-height: 1.6153846154;
+  	margin-bottom: 0.5384615385em;
+  	text-transform: uppercase;
+  }
+
+  .comment-list .comment-form {
+  	padding-bottom: 1.75em;
+  }
+
+  .comment-notes,
+  .comment-awaiting-moderation,
+  .logged-in-as,
+  .form-allowed-tags {
+  	color: #686868;
+  	font-size: 13px;
+  	font-size: 0.8125rem;
+  	line-height: 1.6153846154;
+  	margin-bottom: 2.1538461538em;
+  }
+
+  .no-comments {
+  	border-top: 1px solid #d1d1d1;
+  	font-family: Montserrat, "Helvetica Neue", sans-serif;
+  	font-weight: 700;
+  	margin: 0;
+  	padding-top: 1.75em;
+  }
+
+  .comment-navigation + .no-comments {
+  	border-top: 0;
+  	padding-top: 0;
+  }
+
+  .form-allowed-tags code {
+  	font-family: Inconsolata, monospace;
+  }
+
+  .form-submit {
+  	margin-bottom: 0;
+  }
+
+  .required {
+  	color: #007acc;
+  	font-family: Merriweather, Georgia, serif;
+  }
+
+  .comment {
+      border-bottom: 1px #ccc dashed;
+      padding: 20px 10px;
+  }
+
+  .comment .avatar {
+      float: left;
+      margin: 0 10px 0 0;
+  }
+
+  .comment-reply-title small {
+  	font-size: 100%;
+  }
+
+  .comment-reply-title small a {
+  	border: 0;
+  	float: right;
+  }
+
+  .comment-reply-title small a:hover,
+  .comment-reply-title small a:focus {
+  	color: #1a1a1a;
+  }
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media only screen and ( max-width: 720px ) {
+  #content {
+    width: 90% !important;
+  }
+}
