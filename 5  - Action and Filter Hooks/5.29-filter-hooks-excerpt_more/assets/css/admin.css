@@ -1,0 +1,13 @@
+#titlediv #title {
+    font-size: 2.4rem;
+    background: #23282D;
+    color: #efefef;
+}
+.wp-core-ui input#save-post,
+.wp-core-ui input#save-post:focus,
+.wp-core-ui input#save-post:hover,
+.wp-core-ui input#save-post:active {
+  background: #23282D;
+  border-color: #23282D;
+  color: #efefef;
+}
