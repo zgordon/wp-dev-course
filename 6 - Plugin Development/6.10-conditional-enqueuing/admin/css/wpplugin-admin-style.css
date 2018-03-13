@@ -1,0 +1,7 @@
+/* Add your custom plugin styles to display in the admin area */
+
+.wrap {
+  border: 1px #ddd solid;
+  background: #fff;
+  padding: 2rem;
+}
