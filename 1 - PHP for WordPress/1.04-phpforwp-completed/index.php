@@ -17,7 +17,7 @@
 
     <?php
 
-      // Create an array of post objects using the create_post function
+      // Create an array of post objects using the display_post function
       $posts = array(
         'Hello World',
         'PHP for WordPress',

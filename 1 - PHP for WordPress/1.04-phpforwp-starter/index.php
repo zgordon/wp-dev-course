@@ -17,7 +17,7 @@
 
     <?php
 
-      // Create an array of post objects using the create_post function
+      // Create an array of post objects using the display_post function
 
 
       // Loop through array of posts and display each one on the page
