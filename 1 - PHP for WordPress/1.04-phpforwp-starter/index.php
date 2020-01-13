@@ -22,7 +22,7 @@
 
       // Loop through array of posts and display each one on the page
 
-        // Call the display_post function and pass it the $post
+        // Call the display_title function and pass it the $post
 
 
       /**
@@ -30,7 +30,7 @@
        *
        * @param string $title The title to be displayed
        */
-      function display_post( $title ) {
+      function display_title( $title ) {
 
         // Echo an <h3> tag with the $title inside
 
