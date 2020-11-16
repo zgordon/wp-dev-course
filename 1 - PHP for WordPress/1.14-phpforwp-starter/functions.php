@@ -6,7 +6,7 @@
 function phpforwp_theme_styles() {
 
   // Enqueue google fonts https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round
-  // Enque main style sheet (make dependent on google fonts)
+  // Enqueue main style sheet (make dependent on google fonts)
 
 }
 // Add phpforwp_theme_styles function to wp_enqueue_scripts action hook
